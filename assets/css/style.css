@@ -39,3 +39,6 @@ header{
     object-fit: cover;
 }
 
+.card .card-img{
+    height: 250px;
+}
