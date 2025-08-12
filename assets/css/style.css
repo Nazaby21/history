@@ -34,3 +34,8 @@ header{
     box-shadow: 1px 0px 10px 0px #000;
 }
 
+.carousel-item img {
+    height: 91vh;
+    object-fit: cover;
+}
+

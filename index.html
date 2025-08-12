@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History</title>
-    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <a href="" class="text-decoration-none text-dark fw-bolder fs-3">History</a>
-                </div>
-                <ul class="navbar-nav fw-bold flex-row">
-                    <li class="nav-item px-3 fs-5">
-                        <a href="" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item px-3 fs-5">
-                        <a href="" class="nav-link">Heritage</a>
-                    </li>
-                    <li class="nav-item px-3 fs-5">
-                        <a href="" class="nav-link">About</a>
-                    </li>
-                </ul>
-                <div class="nav-profile" >
-                    <img src="assets/img/avatar-3.jpg" alt="" class="profile-img">
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-brand">
+            <a href="" class="text-decoration-none text-dark fw-bolder fs-3"
+              >History</a
+            >
+          </div>
+          <ul class="navbar-nav fw-bold flex-row">
+            <li class="nav-item px-3 fs-5">
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item px-3 fs-5">
+              <a href="" class="nav-link">Heritage</a>
+            </li>
+            <li class="nav-item px-3 fs-5">
+              <a href="" class="nav-link">About</a>
+            </li>
+          </ul>
+          <div class="nav-profile">
+            <img src="assets/img/avatar-3.jpg" alt="" class="profile-img" />
+          </div>
+        </div>
+      </nav>
     </header>
 
+    <main>
+      <section class="hero-banner">
+        <div class="container-fluid p-0">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/angkorwat.jpg" class="d-block w-100" alt="Angkorwat" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/BTB-Statue.jpg" class="d-block w-100" alt="Battambang" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/WatBanan.JPG" class="d-block w-100" alt="WatBanan" />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-
-
+      <section class="py-2">
+        <div class="container">
+            <h1 class="title text-center py-5">POPULAR PLACE VISITING </h1>
+        </div>
+      </section>
+    </main>
 
     <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
