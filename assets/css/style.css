@@ -67,10 +67,10 @@ header {
 /* Large devices (≥992px) and above */
 @media (min-width: 992px) {
   .hero-banner .carousel {
-    height: 91vh;
+    height: 92vh;
   }
   .hero-banner .carousel-item img {
-    height: 91vh;
+    height: 92vh;
     object-fit: cover;
   }
 }
