@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Hanuman', Roboto;
+}
+.img {
+  width: 100% !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+.fontsize {
+  font-size: 25px;
+}
+.fsh {
+  font-family: 'Hanuman';
+}
+.text {
+  font-size: 20px;
+  
+}
+.text-18 {
+  font-size: 18px;
+  
+}
+.text-responsive {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* -webkit-line-clamp: 3; */
+  overflow: hidden;
+}
+@media screen and (max-width: 955px) {
+  .text-responsive {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+}
+/* @media screen and (max-width: 575px)
+{
+  .row{
+    position: relative;
+  }
+  .col-lg-4 .card{
+    position: absolute;
+    top: 0;
+  }
+  .col-lg-8 .card{
+    position: absolute;
+    top:  300px;
+  }
+} */
+@media screen and (max-width: 575px) {
+    .card {
+        display: flex;
+        flex-direction: column; /* stack children vertically */
+    }
+
+    .card img {
+        order: 1; /* show image first */
+        width: 100%;
+    }
+
+    .card-body {
+        order: 2; /* title/text after image */
+    }
+}
+
+
