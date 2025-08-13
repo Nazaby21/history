@@ -1,28 +1,55 @@
- @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Hanuman', Roboto;
 }
-.body{
-    font-family: "Roboto","Hanuman";
+.img {
+  width: 100% !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  border-radius: 10px !important;
 }
-.card-img{
-    width: 100%;
-    height: 80vh;
-    background-image: url(../img/sr/Siem-Reap-Temples.jpg);
-    background-size: cover;
-    position: relative;
+
+.fontsize {
+  font-size: 25px;
 }
-img{
-    width: 100%;
-    height: 100%;
+.fsh {
+  font-family: 'Hanuman';
 }
-.banner-title{
-    font-size: 60px;
-    font-weight: 800;
-    color: rgb(215, 216, 215);
-    position: absolute;
-    bottom: 200px;
-    left: 50px;
+.text {
+  font-size: 20px;
+  
+}
+.text-18 {
+  font-size: 18px;
+  
+}
+.text-responsive {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+@media screen and (max-width: 1055px) {
+  .text-responsive {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+}
+
+@media screen and (max-width: 575px) {
+    .card {
+        display: flex;
+        flex-direction: column; /* stack children vertically */
+    }
+
+    .card img {
+        order: 1; /* show image first */
+        width: 100%;
+    }
+
+    .card-body {
+        order: 2; /* title/text after image */
+    }
 }
