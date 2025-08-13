@@ -7,6 +7,7 @@ body {
   height: 100vh !important;
   object-fit: cover !important;
 }
+
 .fontsize {
   font-size: 25px;
 }
@@ -24,10 +25,10 @@ body {
 .text-responsive {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  /* -webkit-line-clamp: 3; */
+  -webkit-line-clamp: 4;
   overflow: hidden;
 }
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1055px) {
   .text-responsive {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -35,20 +36,7 @@ body {
   overflow: hidden;
 }
 }
-/* @media screen and (max-width: 575px)
-{
-  .row{
-    position: relative;
-  }
-  .col-lg-4 .card{
-    position: absolute;
-    top: 0;
-  }
-  .col-lg-8 .card{
-    position: absolute;
-    top:  300px;
-  }
-} */
+
 @media screen and (max-width: 575px) {
     .card {
         display: flex;
