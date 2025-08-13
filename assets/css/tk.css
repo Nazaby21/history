@@ -3,6 +3,10 @@ body {
   font-family: "Hanuman", Roboto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background: linear-gradient(to right, #f28c2d, #ffff00, #f28c2d);
 }
