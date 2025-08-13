@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Hanuman", serif;
+}
+.hero-banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-img{
+    top:0;
+    left:0;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    z-index:-1;
+    filter:brightness(0.5);
+}
+.hero-content{
+    position: absolute;
+    width: 100%;
+    top:25%;
+    z-index:3;
+}
+.hero-title{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.card{
+    border:none;
+}
+.img-fluid{
+    height: 280px;
+}
+.card-title{
+    font-size: 25px;
+}
+.card-text{
+    font-size: 20px;
+}
+.modal-body{
+    font-size: 25px;
+}
+.text-responsive{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+@media screen and (max-width: 955px) {
+    .text-responsive{
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+}
