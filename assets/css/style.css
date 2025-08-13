@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", Hanuman;
+}
+
+header {
+  background: linear-gradient(to right, #f28c2d, #ffff00, #f28c2d);
+}
+
+.nav-link {
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+  color: #f28c2c;
+  transition: 0.5s;
+}
+
+.nav-profile {
+  width: 50px;
+  height: 50px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 1px 0px 10px 0px #000;
+}
+
+.carousel-item img {
+  height: 91vh;
+  object-fit: cover;
+}
+
+.card .card-img {
+  height: 250px;
+}
+
+/* Default for small devices */
+@media (max-width: 768px) {
+  .hero-banner .carousel {
+    height: 50vh;
+  }
+  .hero-banner .carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .hero-banner .carousel {
+    height: 70vh;
+  }
+  .hero-banner .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+/* Large devices (≥992px) and above */
+@media (min-width: 992px) {
+  .hero-banner .carousel {
+    height: 92vh;
+  }
+  .hero-banner .carousel-item img {
+    height: 92vh;
+    object-fit: cover;
+  }
+}
