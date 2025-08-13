@@ -2,6 +2,23 @@
 body {
   font-family: 'Hanuman', Roboto;
 }
+
+header {
+  background: linear-gradient(to right, #f28c2d, #ffff00, #f28c2d);
+}
+
+.nav-link {
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+  color: #f28c2c;
+  transition: 0.5s;
+}
+
 .img {
   width: 100% !important;
   height: 100vh !important;
