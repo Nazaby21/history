@@ -1,301 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/btb.css">
-</head>
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/btb.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav></nav>
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-brand">
+            <a href="" class="text-decoration-none text-dark fw-bolder fs-3"
+              >History</a
+            >
+          </div>
+          <ul class="navbar-nav fw-bold flex-row">
+            <li class="nav-item px-3 fs-5">
+              <a href="" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item dropdown px-3 fs-5">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Heritage
+              </a>
+              <ul class="dropdown-menu position-absolute">
+                <li><a class="dropdown-item" href="sr.html">Siem Reap</a></li>
+                <li><a class="dropdown-item" href="btb.html">Battambang</a></li>
+                <li><a class="dropdown-item" href="tk.html">Takeo</a></li>
+                <li>
+                  <a class="dropdown-item" href="kpt.html">Kompong Thom</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="pr.html">Pheah Vihear</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-3 fs-5">
+              <a href="#about" class="nav-link text-dark">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="my-5">
-            <div class="banner">
-                <div class="overlay position-relative">
-                    <div class="col-xl-4 position-absolute z-3">
-                        <div class="card border-0 bg-transparent">
-                            <div class="card-body">
-                                <h5 class="card-title display-4">Battambang <br> ក្រុងបាត់ដំបង</h5>
-                                <p class="card-text text-secondary mt-4">Battambang was founded in the 11th century by the
-                                    Khmer Empire. It later became a major commercial hub and the capital of the Siamese
-                                    province of Inner Cambodia.</p>
-                            </div>
-                        </div>
-                    </div>
+      <section class="my-5">
+        <div class="banner">
+          <div class="overlay position-relative">
+            <div class="col-xl-4 position-absolute z-3">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body">
+                  <h5 class="card-title display-4">
+                    Battambang <br />
+                    ក្រុងបាត់ដំបង
+                  </h5>
+                  <p class="card-text text-secondary mt-4">
+                    Battambang was founded in the 11th century by the Khmer
+                    Empire. It later became a major commercial hub and the
+                    capital of the Siamese province of Inner Cambodia.
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Temple Section -->
-        <section class="temple-area my-5">
-            <div class="container">
-                <div class="row gy-2">
-                    <div class="bg-temple mx-auto">
-                        <h4 class="display-5 text-center fw-bolder mb-5 text-white fw-bold">TEMPLE</h4>
-                    </div>
+      <!-- Temple Section -->
+      <section class="temple-area my-5">
+        <div class="container">
+          <div class="row gy-2">
+            <div class="bg-temple mx-auto">
+              <h4
+                class="display-5 text-center fw-bolder mb-5 text-white fw-bold"
+              >
+                TEMPLE
+              </h4>
+            </div>
 
-                    <!-- Temple 1 -->
-                    <div class="col-xl-4">
-                        <div class="card border-0 border-end bg-dark">
-                            <img src="assets/img/850watekphnom.jpg" class="card-img rounded-0 rounded-end-0" alt="">
+            <!-- Temple 1 -->
+            <div class="col-xl-4">
+              <div class="card border-0 border-end bg-dark">
+                <img
+                  src="assets/img/850watekphnom.jpg"
+                  class="card-img rounded-0 rounded-end-0"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title mb-4 fw-bolder">
+                    Wat Ek Phnom (វត្តឯកភ្នំ)
+                  </h4>
+                  <p class="card-text text-secondary mb-4">
+                    Wat Ek Phnom is an Angkorian temple located on the left side
+                    of the Sangkae River at the small creek of Prek Daun Taev
+                    northwest the Peam Aek spot approximately 9 km north of the
+                    city of Battambang in north western Cambodia. It is a Hindu
+                    temple built in the 11th century under the rule of King
+                    Suryavarman I.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn text-white border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1"
+                    style="
+                      background-image: linear-gradient(to right, red, yellow);
+                    "
+                  >
+                    LEARN MORE
+                  </button>
+                  <!-- Modal 1 -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop1"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel1"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="staticBackdropLabel1"
+                          >
+                            History
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
                         </div>
-                    </div>
-                    <div class="col-xl-8">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4 fw-bolder">Wat Ek Phnom (វត្តឯកភ្នំ)</h4>
-                                <p class="card-text text-secondary mb-4">Wat Ek Phnom is an Angkorian temple located on
-                                    the left side of the Sangkae River at the small creek of Prek Daun Taev northwest
-                                    the Peam Aek spot approximately 9 km north of the city of Battambang in north
-                                    western Cambodia. It is a Hindu temple built in the 11th century under the rule of
-                                    King Suryavarman I.</p>
-                                <button type="button" class="btn text-white border-0" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop1"
-                                    style="background-image: linear-gradient(to right, red, yellow);">
-                                    LEARN MORE
-                                </button>
-                                <!-- Modal 1 -->
-                                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel1">History</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                An enormous white-stone sitting Buddha statue leads to the modern
-                                                Buddhist pagoda Ek Phnom surrounded by 18 Bodhi Trees. The site is
-                                                deemed as a very popular picnic and pilgrimage destination for Khmers at
-                                                celebration times. The pagoda opens the way to the ruins of the ancient
-                                                hinduist temple. The ancient temple, built of sandstone blocks and
-                                                enclosed by the remains of a laterite outer wall and a Baray, consists
-                                                of small temples or prasats on a platform and measures 52m by 49m.
-                                                Mostly reduced to ruins today only the main towers of the temple remain
-                                                standing whose upper flanks hold some fine bas-reliefs.
-                                                An enormous white-stone sitting Buddha statue leads to the modern
-                                                Buddhist pagoda Ek Phnom surrounded by 18 Bodhi Trees. The site is
-                                                deemed as a very popular picnic and pilgrimage destination for Khmers at
-                                                celebration times. The pagoda opens the way to the ruins of the ancient
-                                                hinduist temple. The ancient temple, built of sandstone blocks and
-                                                enclosed by the remains of a laterite outer wall and a Baray, consists
-                                                of small temples or prasats on a platform and measures 52m by 49m.
-                                                Mostly reduced to ruins today only the main towers of the temple remain
-                                                standing whose upper flanks hold some fine bas-reliefs.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Understood</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="modal-body">
+                          An enormous white-stone sitting Buddha statue leads to
+                          the modern Buddhist pagoda Ek Phnom surrounded by 18
+                          Bodhi Trees. The site is deemed as a very popular
+                          picnic and pilgrimage destination for Khmers at
+                          celebration times. The pagoda opens the way to the
+                          ruins of the ancient hinduist temple. The ancient
+                          temple, built of sandstone blocks and enclosed by the
+                          remains of a laterite outer wall and a Baray, consists
+                          of small temples or prasats on a platform and measures
+                          52m by 49m. Mostly reduced to ruins today only the
+                          main towers of the temple remain standing whose upper
+                          flanks hold some fine bas-reliefs. An enormous
+                          white-stone sitting Buddha statue leads to the modern
+                          Buddhist pagoda Ek Phnom surrounded by 18 Bodhi Trees.
+                          The site is deemed as a very popular picnic and
+                          pilgrimage destination for Khmers at celebration
+                          times. The pagoda opens the way to the ruins of the
+                          ancient hinduist temple. The ancient temple, built of
+                          sandstone blocks and enclosed by the remains of a
+                          laterite outer wall and a Baray, consists of small
+                          temples or prasats on a platform and measures 52m by
+                          49m. Mostly reduced to ruins today only the main
+                          towers of the temple remain standing whose upper
+                          flanks hold some fine bas-reliefs.
                         </div>
-                    </div>
-
-                    <!-- Temple 2 -->
-                    <div class="col-xl-4">
-                        <div class="card border-0 border-end bg-dark">
-                            <img src="assets/img/WatBanan.JPG" class="card-img rounded-0 rounded-end-0" alt="">
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Understood
+                          </button>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-xl-8">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4 fw-bolder">Wat Banan (បាណន់)</h4>
-                                <p class="card-text text-secondary mb-4">Wat Banan ភ្នំបាណន់ is the best-preserved of
-                                    the Khmer
-                                    temples in Battambang Province. The distinctive five towers of the temple are
-                                    similar to the much larger and more famous temple of Angkor Wat. At the base of the
-                                    mountain, is a step laterite staircase flanked by nagas.</p>
-                                <button type="button" class="btn text-white border-0" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop2"
-                                    style="background-image: linear-gradient(to right, red, yellow);">
-                                    LEARN MORE
-                                </button>
-                                <!-- Modal 2 -->
-                                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel2">History</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Wat Banan is the best-preserved of the Khmer temples in Battambang
-                                                Province. The
-                                                distinctive five towers of the temple are similar to the much larger and
-                                                more famous temple of Angkor Wat. At the base of the mountain, is a step
-                                                laterite staircase flanked by nagas.The 11th century temple was built by
-                                                King Udayadityavarman II (Khmer: ឧតយាទិត្យវរ្ម័ន២) son of King
-                                                Suryavarman I (Khmer: សូរ្យវរ្ម័នទី១) and despite some looting it is in
-                                                a considerably better state of repair than Wat Ek Phnom. It was built to
-                                                give thanks, ask for help, and pray to God. In that era, they had a
-                                                strong belief in god, especially Hindu gods.
-                                                However, Udayadityavarman was Shaivite and the sculptures of Phnom Banan
-                                                are mainly Buddhist. As they were later on defaced like those in Angkor,
-                                                it's highly likely that the Buddhist temple was the result of a temple
-                                                rebuilding under Jayavarman VII in the late 12th century.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Understood</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Local Food Section -->
-        <section class="temple-area my-5">
-            <div class="container">
-                <div class="row gy-2">
-                    <div class="bg-food mx-auto">
-                        <h4 class="display-5 text-center fw-bolder mb-5 text-white fw-bold">LOCAL FOOD</h4>
-                    </div>
-
-                    <!-- Food 1: Fish Amok -->
-                    <div class="col-xl-8">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4 fw-bolder">Fish Amok(អាម៉ុក)</h4>
-                                <p class="card-text text-secondary mb-4">Fish Amok (អាម៉ុកត្រី) is a Khmer steamed fish
-                                    curry (amok) with a mousse-like consistency, considered one of Cambodia's national
-                                    dishes. Fish amok is believed to have been a royal Khmer dish dating back to the
-                                    Khmer Empire,[1][2] although some question it originating in Cambodia.[4] It is
-                                    slightly spicy. It also contains a variety of spices chili, turmeric (Madras &
-                                    Alleppey), garlic, ginger, paprika, cumin, coriander seed, galangal, kaffir lime
-                                    leaf, kenchur, black pepper, lemon myrtle leaf. Amok Trei in English is Steamed
-                                    Fish.</p>
-                                <button type="button" class="btn text-white border-0" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop3"
-                                    style="background-image: linear-gradient(to right, red, yellow);">
-                                    LEARN MORE
-                                </button>
-                                <!-- Modal 3 -->
-                                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel3">Ingredient</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Usually, goby, snakehead or catfish is used; however, they are also
-                                                sometimes substituted with cod, snapper, barramundi, salmon, whiting, or
-                                                perch. The fish fillets are rubbed with or marinated in a freshly-made
-                                                yellow or green kroeung mixed with coconut cream or coconut milk and
-                                                eggs. The curry mixture is placed in a banana leaf container with great
-                                                morinda leaves at the bottom and steamed for around 20 to 30 minutes
-                                                until the curry achieves a mousse-like consistency.Great morinda
-                                                leaves can also be substituted with Swiss chard leaves if not
-                                                available.
-                                                Fish amok is served hot usually in either banana leaf containers or
-                                                coconut shells and eaten with steamed rice. Many restaurants in
-                                                Cambodia also serve less traditional versions of amok with chicken,
-                                                tofu, or beef instead of fish. Other deviations include the use of a
-                                                store-bought herb paste, other types of kroeung, more liquid consistency
-                                                and cooking instead of steaming.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Understood</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Temple 2 -->
+            <div class="col-xl-4">
+              <div class="card border-0 border-end bg-dark">
+                <img
+                  src="assets/img/WatBanan.JPG"
+                  class="card-img rounded-0 rounded-end-0"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title mb-4 fw-bolder">Wat Banan (បាណន់)</h4>
+                  <p class="card-text text-secondary mb-4">
+                    Wat Banan ភ្នំបាណន់ is the best-preserved of the Khmer
+                    temples in Battambang Province. The distinctive five towers
+                    of the temple are similar to the much larger and more famous
+                    temple of Angkor Wat. At the base of the mountain, is a step
+                    laterite staircase flanked by nagas.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn text-white border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2"
+                    style="
+                      background-image: linear-gradient(to right, red, yellow);
+                    "
+                  >
+                    LEARN MORE
+                  </button>
+                  <!-- Modal 2 -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop2"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel2"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="staticBackdropLabel2"
+                          >
+                            History
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
                         </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="card border-0 border-end bg-dark">
-                            <img src="assets/img/Amok.jpg" class="card-img rounded-0 rounded-end-0" alt="">
+                        <div class="modal-body">
+                          Wat Banan is the best-preserved of the Khmer temples
+                          in Battambang Province. The distinctive five towers of
+                          the temple are similar to the much larger and more
+                          famous temple of Angkor Wat. At the base of the
+                          mountain, is a step laterite staircase flanked by
+                          nagas.The 11th century temple was built by King
+                          Udayadityavarman II (Khmer: ឧតយាទិត្យវរ្ម័ន២) son of
+                          King Suryavarman I (Khmer: សូរ្យវរ្ម័នទី១) and despite
+                          some looting it is in a considerably better state of
+                          repair than Wat Ek Phnom. It was built to give thanks,
+                          ask for help, and pray to God. In that era, they had a
+                          strong belief in god, especially Hindu gods. However,
+                          Udayadityavarman was Shaivite and the sculptures of
+                          Phnom Banan are mainly Buddhist. As they were later on
+                          defaced like those in Angkor, it's highly likely that
+                          the Buddhist temple was the result of a temple
+                          rebuilding under Jayavarman VII in the late 12th
+                          century.
                         </div>
-                    </div>
-
-                    <!-- Food 2: Sangvak Ang -->
-                    <div class="col-xl-8">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4 fw-bolder">Sangvak Ang (សង្វាក់អាំង)</h4>
-                                <p class="card-text text-secondary mb-4">Sangvak Aing is a popular street
-                                    food originating in Battambang, Cambodia. The name roughly translates to “grilled
-                                    sausage” or “grilled meatball skewer.” The dish consists of seasoned minced meat
-                                    shaped into small balls or cylinders, skewered, and grilled over charcoal or
-                                    electric heat until golden and slightly smoky.</p>
-                                <button type="button" class="btn text-white border-0" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop4"
-                                    style="background-image: linear-gradient(to right, red, yellow);">
-                                    LEARN MORE
-                                </button>
-                                <!-- Modal 4 -->
-                                <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel4">Ingredient</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                សាច់ជ្រូកចិញ្ច្រាំ (ឬសាច់មាន់/សាច់គោក៏បាន)
-
-                                                គ្រាប់គោសង្កទឹក
-
-                                                គ្រឿងទេសដូចជា ខ្ទឹមស, ខ្ទឹមក្រហម, ស្លឹកគ្រៃ, ស្លឹកជីអុំ, ម្ទេសស្រស់
-
-                                                សណ្តែកដីកាប់ ឬសណ្តែកដីបុកស្រាល
-
-                                                បន្ថែមជាមួយទឹកខ្មេះផ្អែម ឬទឹកជ្រលក់ពិសេស
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Understood</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Understood
+                          </button>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-xl-4">
-                        <div class="card border-0 border-end bg-dark">
-                            <img src="assets/img/sangval-2.jpg" class="card-img rounded-0 rounded-end-0" alt="">
-                        </div>
-                    </div>
-
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Local Food Section -->
+      <section class="temple-area my-5">
+        <div class="container">
+          <div class="row gy-2">
+            <div class="bg-food mx-auto">
+              <h4
+                class="display-5 text-center fw-bolder mb-5 text-white fw-bold"
+              >
+                LOCAL FOOD
+              </h4>
+            </div>
+
+            <!-- Food 1: Fish Amok -->
+            <div class="col-xl-8">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title mb-4 fw-bolder">Fish Amok(អាម៉ុក)</h4>
+                  <p class="card-text text-secondary mb-4">
+                    Fish Amok (អាម៉ុកត្រី) is a Khmer steamed fish curry (amok)
+                    with a mousse-like consistency, considered one of Cambodia's
+                    national dishes. Fish amok is believed to have been a royal
+                    Khmer dish dating back to the Khmer Empire,[1][2] although
+                    some question it originating in Cambodia.[4] It is slightly
+                    spicy. It also contains a variety of spices chili, turmeric
+                    (Madras & Alleppey), garlic, ginger, paprika, cumin,
+                    coriander seed, galangal, kaffir lime leaf, kenchur, black
+                    pepper, lemon myrtle leaf. Amok Trei in English is Steamed
+                    Fish.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn text-white border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop3"
+                    style="
+                      background-image: linear-gradient(to right, red, yellow);
+                    "
+                  >
+                    LEARN MORE
+                  </button>
+                  <!-- Modal 3 -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop3"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel3"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="staticBackdropLabel3"
+                          >
+                            Ingredient
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          Usually, goby, snakehead or catfish is used; however,
+                          they are also sometimes substituted with cod, snapper,
+                          barramundi, salmon, whiting, or perch. The fish
+                          fillets are rubbed with or marinated in a freshly-made
+                          yellow or green kroeung mixed with coconut cream or
+                          coconut milk and eggs. The curry mixture is placed in
+                          a banana leaf container with great morinda leaves at
+                          the bottom and steamed for around 20 to 30 minutes
+                          until the curry achieves a mousse-like
+                          consistency.Great morinda leaves can also be
+                          substituted with Swiss chard leaves if not available.
+                          Fish amok is served hot usually in either banana leaf
+                          containers or coconut shells and eaten with steamed
+                          rice. Many restaurants in Cambodia also serve less
+                          traditional versions of amok with chicken, tofu, or
+                          beef instead of fish. Other deviations include the use
+                          of a store-bought herb paste, other types of kroeung,
+                          more liquid consistency and cooking instead of
+                          steaming.
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Understood
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="card border-0 border-end bg-dark">
+                <img
+                  src="assets/img/Amok.jpg"
+                  class="card-img rounded-0 rounded-end-0"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- Food 2: Sangvak Ang -->
+            <div class="col-xl-8">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h4 class="card-title mb-4 fw-bolder">
+                    Sangvak Ang (សង្វាក់អាំង)
+                  </h4>
+                  <p class="card-text text-secondary mb-4">
+                    Sangvak Aing is a popular street food originating in
+                    Battambang, Cambodia. The name roughly translates to
+                    “grilled sausage” or “grilled meatball skewer.” The dish
+                    consists of seasoned minced meat shaped into small balls or
+                    cylinders, skewered, and grilled over charcoal or electric
+                    heat until golden and slightly smoky.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn text-white border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop4"
+                    style="
+                      background-image: linear-gradient(to right, red, yellow);
+                    "
+                  >
+                    LEARN MORE
+                  </button>
+                  <!-- Modal 4 -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop4"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel4"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="staticBackdropLabel4"
+                          >
+                            Ingredient
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          សាច់ជ្រូកចិញ្ច្រាំ (ឬសាច់មាន់/សាច់គោក៏បាន)
+                          គ្រាប់គោសង្កទឹក គ្រឿងទេសដូចជា ខ្ទឹមស, ខ្ទឹមក្រហម,
+                          ស្លឹកគ្រៃ, ស្លឹកជីអុំ, ម្ទេសស្រស់ សណ្តែកដីកាប់
+                          ឬសណ្តែកដីបុកស្រាល បន្ថែមជាមួយទឹកខ្មេះផ្អែម
+                          ឬទឹកជ្រលក់ពិសេស
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Understood
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="card border-0 border-end bg-dark">
+                <img
+                  src="assets/img/sangval-2.jpg"
+                  class="card-img rounded-0 rounded-end-0"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-warning mt-5 py-4" id="about">
+      <div class="container">
+        <div class="row text-dark">
+          <div class="col-lg-4 mb-3">
+            <h2>History</h2>
+            <p>
+              Discover the breathtaking temples of Cambodia through detailed
+              history and stunning images. Learn about iconic sites like Angkor
+              Wat and their cultural significance. Explore and experience the
+              rich heritage of Cambodia’s ancient wonders.
+            </p>
+          </div>
+          <div class="col-lg-4 mb-3 text-lg-center">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled fw-bold">
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none">Home</a>
+              </li>
+              <li class="py-3">
+                <a href="#" class="text-dark text-decoration-none">Heritage</a>
+              </li>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <h5>Contact Us</h5>
+            <p>
+              123 Heritage St, Phnom Penh, Cambodia<br />
+              Phone: +855 12 345 678<br />
+              Email: info@historysite.com
+            </p>
+            <h5>Follow Us</h5>
+            <a href="#" class="me-2 text-dark"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="me-2 text-dark"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="me-2 text-dark"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="text-center mt-3 text-dark border-secondary border-top">
+          <p class="pt-2 m-0">
+            &copy; 2025 History Cambodia. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
